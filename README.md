@@ -40,7 +40,9 @@ If no web-server is available, **tcsBU** can be saved into any local directory a
 
 ## Usage
 
+The first step is to read a TCS output file, by clicking on the `Load Data` button (top-left). Note that there is no need to manually edit the results in TCS (e.g. by using the `spring` algorithm). Once the TCS analysis is finished you can look for a GML file with extension *.graph*, usually found on the directory where the alignment used by TCS is. The GML (*Graph Modeling Language*) format is simply a text file format supporting network data with a very easy syntax. The GML specification can be found at [this](http://www.fim.uni-passau.de/en/theoretical-computer-science/projects/) site. Users should not touch (edit) the GML file unless they really know what they are doing!
 
+The user interface is self-intuitive. There is a `Help` button with more information on how to fiddle with the parameters of the `force-directed layout` of *d3.js*.
 
 
 ## Bug Tracking
