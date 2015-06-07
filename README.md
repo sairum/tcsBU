@@ -15,11 +15,11 @@ As a consequence, it takes a significant effort to edit the resulting PostScript
 
 **tcsBU** is a browser-based javascript program that can be served by an HTTP server or can be installed directly into a standard folder and run directly by any modern browser. In a server-based installation **tcsBU** does not impose any burden on the server besides serving the javascript libraries. All computations are done by the browser itself. **tcsBU** depends on a few third-party libraries (license type in parenthesis):
 
-- [https://jquery.com/](JQuery) (MIT): the underlying Javascript engine
-- [http://w2ui.com/](w2ui) (MIT): JQuery-based User Interface
-- [http://d3js.org/](d3.js) (BSD): graphics engine (force-directed graph layout)
-- [https://github.com/eligrey/FileSaver.js/](FileSaver.js) (X11/MIT): implements file saving with the browser without depending on the "download" HTML5 attribute which is partially supported (some browsers, such as IE and Safari, do not support the "download" attribute yet)
-- [https://github.com/emeeks/d3-svg-legend/](d3-svg-legend) (MIT): A modified version of this code, authored by Michael P Schroeder, was integrated into **tcsBU** source code
+- [JQuery](https://jquery.com/) (MIT): the underlying Javascript engine
+- [w2ui](http://w2ui.com/)(w2ui) (MIT): JQuery-based User Interface
+- [d3.js](http://d3js.org/) (BSD): graphics engine (force-directed graph layout)
+- [FileSaver.js](https://github.com/eligrey/FileSaver.js/) (X11/MIT): implements file saving with the browser without depending on the "download" HTML5 attribute which is partially supported (some browsers, such as IE and Safari, do not support the "download" attribute yet)
+- [d3-svg-legend](https://github.com/emeeks/d3-svg-legend/) (MIT): A modified version of this code, authored by Michael P Schroeder, was integrated into **tcsBU** source code
 
 
 **Because many of the above mentioned libraries dropped support for older versions of some browsers, tcsBU will only run on modern ones (Firefox 20+, Chrome 13+, IE 10+, Opera 15+ and Safari 6.1+)**.
