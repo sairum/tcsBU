@@ -59,7 +59,7 @@ Your contributions are welcome. However, there are a few things you need to know
 
 ## Forking
 
-This software uses [http://gruntjs.com/](grunt) for automation of some tasks (concatenation of javascript files, compression, etc). There is an accompanying Gruntfile.js at the base directory. After downloading the source code issue the command at the base directory
+This software uses [grunt](http://gruntjs.com/) for automation of some tasks (concatenation of javascript files, compression, etc). There is an accompanying Gruntfile.js at the base directory. After downloading the source code issue the command at the base directory
 
 ```
 npm install
