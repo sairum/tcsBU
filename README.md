@@ -4,9 +4,9 @@
 
 TCS (Clement *et al.* 2000) is among the most popular haplotype network reconstruction methods. Written in Java, it is based on the *Statistical Parsimony* algorithm developed by Templeton *et al.* (1992). Unfortunately, TCS has some major limitations related with its output: 
 
-- the graphics are coarse and often not ready for publication, even after usage of the 'spring' method (force-directed layout algorithm) to improve network layout
+- the graphics are coarse and often not ready for publication, even after usage of the `spring` method (force-directed layout algorithm) to improve network layout
 - there is no built-in way of classifying haplotypes and displaying that information in haplogroups
-- when more than one network is present in the data, the software cannot use its 'spring' algorithm to layout multiple graphs, resulting in a set of overlapping networks that have to be disentangled manually. 
+- when more than one network is present in the data, the software cannot use its `spring` algorithm to layout multiple graphs, resulting in a set of overlapping networks that have to be disentangled manually. 
 
 
 As a consequence, it takes a significant effort to edit the resulting PostScript vector file in a vector manipulation software, such as Inkscape or Adobe Illustrator&reg;. **tcsBU** (read **TCS Bee You**) was developed to allow the production of publication-ready networks resulting from TCS analysis without too much effort. Users are able to classify haplotypes (for example, according to sampling locations or dates) and this information is displayed in pie-chart like haplogroups within the network. Groups can be classified using colors, patterns or a combination of both. The final network can be saved as a Scalable Vector Graphics (SVG) format, which can then be easily embedded in a modern word processor or edited and exported to other type of graphics format using a vector manipulation software.
@@ -18,9 +18,8 @@ As a consequence, it takes a significant effort to edit the resulting PostScript
 - [JQuery](https://jquery.com/) (MIT): the underlying Javascript engine
 - [w2ui](http://w2ui.com/) (MIT): JQuery-based User Interface
 - [d3.js](http://d3js.org/) (BSD): graphics engine (force-directed graph layout)
-- [FileSaver.js](https://github.com/eligrey/FileSaver.js/) (X11/MIT): implements file saving with the browser without depending on the "download" HTML5 attribute which is partially supported (some browsers, such as IE and Safari, do not support the "download" attribute yet)
+- [FileSaver.js](https://github.com/eligrey/FileSaver.js/) (X11/MIT): implements file saving with the browser without depending on the `download` HTML5 attribute which is partially supported (some browsers, such as IE and Safari, do not support the "download" attribute yet)
 - [d3-svg-legend](https://github.com/emeeks/d3-svg-legend/) (MIT): A modified version of this code, authored by Michael P Schroeder, was integrated into **tcsBU** source code
-
 
 **Because many of the above mentioned libraries dropped support for older versions of some browsers, tcsBU will only run on modern ones (Firefox 20+, Chrome 13+, IE 10+, Opera 15+ and Safari 6.1+)**.
 
@@ -36,13 +35,13 @@ For a web-based installation, the **tcsBU** package can be saved into any direct
 
 ### Local installation
 
-If no web-server is available, **tcsBU** can be saved into any local directory and run using the *file://* protocol. If a network connection is available, users can click on the *index.html* file, which should automatically open the page in the default browser. If no network connection is available, users should use *tcsbu.html* instead. The difference is that the latter will not try to download the necessary libraries (JQuery, w2ui, d3.js) from their respective Content Delivery Networks (CDNs) but will use the ones shipped with **tcsBU** (found in *js/* directory).
+If no web-server is available, **tcsBU** can be saved into any local directory and run using the `file://` protocol. If a network connection is available, users can click on the `index.html` file, which should automatically open the page in the default browser. If no network connection is available, users should use `tcsbu.html` instead. The difference is that the latter will not try to download the necessary libraries (JQuery, w2ui, d3.js) from their respective Content Delivery Networks (CDNs) but will use the ones shipped with **tcsBU** (found in `js/` directory).
 
 ## Usage
 
-The first step is to read a TCS output file, by clicking on the `Load Data` button (top-left). Note that there is no need to manually edit the results in TCS (e.g. by using the `spring` algorithm). Once the TCS analysis is finished you can look for a GML file with extension *.graph*, usually found on the directory where the alignment used by TCS is. The GML (*Graph Modeling Language*) format is simply a text file format supporting network data with a very easy syntax. The GML specification can be found at [this](http://www.fim.uni-passau.de/en/theoretical-computer-science/projects/) site. Users should not touch (edit) the GML file unless they really know what they are doing!
+The first step is to read a TCS output file, by clicking on the `Load Data` button (top-left). Note that there is no need to manually edit the results in TCS (e.g. by using the *spring* algorithm). Once the TCS analysis is finished you can look for a GML file with extension `.graph`, usually found on the directory where the alignment used by TCS is. The GML (*Graph Modeling Language*) format is simply a text file format supporting network data with a very easy syntax. The GML specification can be found at [this](http://www.fim.uni-passau.de/en/theoretical-computer-science/projects/) site. Users should not touch (edit) the GML file unless they really know what they are doing!
 
-The user interface is self-intuitive. There is a `Help` button with more information on how to fiddle with the parameters of the `force-directed layout` of *d3.js*.
+The user interface is self-intuitive. There is a `Help` button with more information on how to fiddle with the parameters of the *force-directed layout* of `d3.js`, .
 
 
 ## Bug Tracking
