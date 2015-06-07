@@ -1,6 +1,6 @@
 # tcsBU
 ## a TCS network beautifier
-TCS (Clement et al.>, 2000) is among the most popular haplotype network reconstruction methods. Written in Java, it is based on the *Statistical Parsimony* algorithm developed by Templeton et al. (1992). Unfortunately, TCS has some major limitations related with its output: 
+TCS (Clement *et al.* 2000) is among the most popular haplotype network reconstruction methods. Written in Java, it is based on the *Statistical Parsimony* algorithm developed by Templeton *et al.* (1992). Unfortunately, TCS has some major limitations related with its output: 
 
 - the graphics are coarse and often not ready for publication, even after usage of the 'spring' method (force-directed layout algorithm) to improve network layout
 - there is no built-in way of classifying haplotypes and displaying that information in haplogroups
