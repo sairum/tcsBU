@@ -1,5 +1,7 @@
 # tcsBU
+
 ## a TCS network beautifier
+
 TCS (Clement *et al.* 2000) is among the most popular haplotype network reconstruction methods. Written in Java, it is based on the *Statistical Parsimony* algorithm developed by Templeton *et al.* (1992). Unfortunately, TCS has some major limitations related with its output: 
 
 - the graphics are coarse and often not ready for publication, even after usage of the 'spring' method (force-directed layout algorithm) to improve network layout
@@ -7,7 +9,7 @@ TCS (Clement *et al.* 2000) is among the most popular haplotype network reconstr
 - when more than one network is present in the data, the software cannot use its 'spring' algorithm to layout multiple graphs, resulting in a set of overlapping networks that have to be disentangled manually. 
 
 
-As a consequence, it takes a significant effort to edit the resulting PostScript vector file in a vector manipulation software, such as Inkscape or Adobe Illustrator&reg;. **tcsBU** (read *TCS Bee You*) was developed to allow the production of publication-ready networks resulting from TCS analysis without too much effort. Users are able to classify haplotypes (for example, according to sampling locations or dates) and this information is displayed in pie-chart like haplogroups within the network. Groups can be classified using colors, patterns or a combination of both. The final network can be saved as a Scalable Vector Graphics (SVG) format, which can then be easily embedded in a modern word processor or edited and exported to other type of graphics format using a vector manipulation software.
+As a consequence, it takes a significant effort to edit the resulting PostScript vector file in a vector manipulation software, such as Inkscape or Adobe Illustrator&reg;. **tcsBU** (read **TCS Bee You**) was developed to allow the production of publication-ready networks resulting from TCS analysis without too much effort. Users are able to classify haplotypes (for example, according to sampling locations or dates) and this information is displayed in pie-chart like haplogroups within the network. Groups can be classified using colors, patterns or a combination of both. The final network can be saved as a Scalable Vector Graphics (SVG) format, which can then be easily embedded in a modern word processor or edited and exported to other type of graphics format using a vector manipulation software.
 
 ## The software
 
@@ -20,12 +22,12 @@ As a consequence, it takes a significant effort to edit the resulting PostScript
 - [https://github.com/emeeks/d3-svg-legend/](d3-svg-legend) (MIT): A modified version of this code, authored by Michael P Schroeder, was integrated into **tcsBU** source code
 
 
-Because many of the aforementioned libraries dropped support for older versions of some browsers, **tcsBU** will only run on modern ones (Firefox 20+, Chrome, Chrome for Android, IE 10+, Opera 15+ and Safari 6.1+).
+**Because many of the above mentioned libraries dropped support for older versions of some browsers, tcsBU will only run on modern ones (Firefox 20+, Chrome 13+, IE 10+, Opera 15+ and Safari 6.1+)**.
 
 ## Installation
 
 ### Web-server installation
-For a web-based installation, the **tcsBU** package can be saved into any directory under the web-server ROOT directory. No further steps are necessary, and users will be able to access the software by pointing their browsers at the specified directory. The only files/folders necessary are
+For a web-based installation, the **tcsBU** package can be saved into any directory under the web-server ROOT directory. No further steps are necessary, and users will be able to access the software by pointing their browsers at the specified location (URL). The only files/folders necessary are
 
 * index.html
 * docs/
@@ -34,8 +36,52 @@ For a web-based installation, the **tcsBU** package can be saved into any direct
 
 ### Local installation
 
-If no web-server is available, **tcsBU** can be saved into any local directory and run using the 'file://' protocol. If an network connection is available, users can click on the *index.html* file, which should automatically open the default browser. If no network connection is available, users should use *tcsbu.html* instead. The difference is that the latter will not try to download the necessary libraries (JQuery, w2ui, d3.js) from their respective Content Delivery Networks (CDNs) but will use the ones shipped with **tcsBU** (found in *js/* directory)
+If no web-server is available, **tcsBU** can be saved into any local directory and run using the *file://* protocol. If a network connection is available, users can click on the *index.html* file, which should automatically open the page in the default browser. If no network connection is available, users should use *tcsbu.html* instead. The difference is that the latter will not try to download the necessary libraries (JQuery, w2ui, d3.js) from their respective Content Delivery Networks (CDNs) but will use the ones shipped with **tcsBU** (found in *js/* directory).
+
+## Usage
+
+
+
+
+## Bug Tracking
+
+Have a bug or a feature request? Please open an issue here [https://github.com/sairum/tcsBU/issues](https://github.com/sairum/tcsBU/issues). 
+Please make sure that the same issue was not previously submitted by someone else.
+
+## Contributing
+
+Your contributions are welcome. However, there are a few things you need to know before contributing:
+
+1. Please check out latest code before changing anything. It is harder to merge if your changes cannot merge cleanly.
+2. If you are changing JS files - do all changes in /src folder
+3. If you are changing CSS files - do all changes in /src/css
+4. If you want to change documentation - do all changes in /docs
+
+## Forking
+
+This software uses [http://gruntjs.com/](grunt) for automation of some tasks (concatenation of javascript files, compression, etc). There is an accompanying Gruntfile.js at the base directory. After downloading the source code issue the command at the base directory
+
+```
+npm install
+```
+
+which will install any dependencies (mostly grunt and plugins) To build the *tcsBU.js* code just do
+
+```
+grunt
+```
+
+or
+
+```
+grunt watch
+```
+
+which will watch for any modification while editing and will recompile anything if necessary.
 
 ## References
 - Clement M, Posada D, Crandall KA (2000) TCS: a computer program to estimate gene genealogies. *Molecular Ecology* 9, 1657-1659.
 - Templeton AR, Crandall KA, Sing CF (1992) A cladistic analysis of phenotypic associations with haplotypes inferred from restriction endonuclease mapping and DNA sequence data. III. Cladogram estimation. *Genetics* 132, 619-633.
+
+
+
