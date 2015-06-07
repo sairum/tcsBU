@@ -45,7 +45,7 @@ If no web-server is available, **tcsBU** can be saved into any local directory a
 
 ## Bug Tracking
 
-Have a bug or a feature request? Please open an issue here [https://github.com/sairum/tcsBU/issues](https://github.com/sairum/tcsBU/issues). 
+Have a bug or a feature request? Open an issue here [https://github.com/sairum/tcsBU/issues](https://github.com/sairum/tcsBU/issues). 
 Please make sure that the same issue was not previously submitted by someone else.
 
 ## Contributing
@@ -59,13 +59,13 @@ Your contributions are welcome. However, there are a few things you need to know
 
 ## Forking
 
-This software uses [grunt](http://gruntjs.com/) for automation of some tasks (concatenation of javascript files, compression, etc). There is an accompanying Gruntfile.js at the base directory. After downloading the source code issue the command at the base directory
+This software uses [grunt](http://gruntjs.com/) for automation of some tasks (concatenation of javascript files, compression, etc). There is an accompanying Gruntfile.js at the base directory. After downloading the source code, issue the command at the base directory
 
 ```
 npm install
 ```
 
-which will install any dependencies (mostly grunt and plugins) To build the *tcsBU.js* code just do
+which will install any dependencies (mostly grunt and plug-ins). To build the *tcsBU.js* code just do
 
 ```
 grunt
@@ -77,11 +77,11 @@ or
 grunt watch
 ```
 
-which will watch for any modification while editing and will recompile anything if necessary.
+which will watch for any modification while editing, and will recompile anything if necessary.
 
 ## References
-- Clement M, Posada D, Crandall KA (2000) TCS: a computer program to estimate gene genealogies. *Molecular Ecology* 9, 1657-1659.
-- Templeton AR, Crandall KA, Sing CF (1992) A cladistic analysis of phenotypic associations with haplotypes inferred from restriction endonuclease mapping and DNA sequence data. III. Cladogram estimation. *Genetics* 132, 619-633.
+1. Clement M, Posada D, Crandall KA (2000) TCS: a computer program to estimate gene genealogies. *Molecular Ecology* 9, 1657-1659.
+2. Templeton AR, Crandall KA, Sing CF (1992) A cladistic analysis of phenotypic associations with haplotypes inferred from restriction endonuclease mapping and DNA sequence data. III. Cladogram estimation. *Genetics* 132, 619-633.
 
 
 
