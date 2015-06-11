@@ -46,10 +46,6 @@ module.exports = function (grunt) {
         dest   : 'css/tcsBU.css'
       },
     },
-    //jshint: {
-      //beforeconcat: ['src/*.js'],
-      //afterconcat:  ['js/tcsBU.js']
-    //},    
     uglify: {
       tcsBU: { 
         options: { banner: tcsBUhead, mangling: false },
@@ -87,11 +83,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  //grunt.loadNpmTasks('grunt-contrib-jshint');
-  //grunt.loadNpmTasks('grunt-shell');
-  //grunt.loadNpmTasks('grunt-webfont');
-
   grunt.registerTask('default', ['clean', 'concat', 'uglify', 'cssmin']);
-  //grunt.registerTask('docs', ['shell:docs']);
   grunt.registerTask('tcsBU', ['clean:tcsBU', 'concat:tcsBU', 'uglify:tcsBU', 'concat:css', 'cssmin:css' ]);
 };
