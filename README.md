@@ -8,8 +8,7 @@ TCS (Clement *et al.* 2000) is among the most popular haplotype network reconstr
 - there is no built-in way of classifying haplotypes and displaying that information in haplogroups
 - when more than one network is present in the data, the software cannot use its `spring` algorithm to layout multiple graphs, resulting in a set of overlapping networks that have to be disentangled manually. 
 
-
-As a consequence, it takes a significant effort to edit the resulting PostScript vector file in a vector manipulation software, such as Inkscape or Adobe Illustrator&reg;. **tcsBU** (read **TCS Bee You**) was developed to allow the production of publication-ready networks resulting from TCS analysis without too much effort. Users are able to classify haplotypes (for example, according to sampling locations or dates) and this information is displayed in pie-chart like haplogroups within the network. Groups can be classified using colors, patterns or a combination of both. The final network can be saved as a Scalable Vector Graphics (SVG) format, which can then be easily embedded in a modern word processor or edited and exported to other type of graphics format using a vector manipulation software.
+As a consequence, it takes a significant effort to edit the resulting PostScript vector file in a vector manipulation software, such as Inkscape or Adobe Illustrator&reg;. **tcsBU** (read **TCS Bee You**) was developed to allow the production of publication-ready networks resulting from TCS analysis without too much effort. Users are able to classify haplotypes (for example, according to sampling locations or dates) and this information is displayed in pie-chart like haplogroups within the network. Groups can be classified using colors, patterns or a combination of both. The final network can be saved as a Scalable Vector Graphics (SVG) format, a World Wide Web Consortium (W3C) standard, which can then be directly embedded in some word processors (e.g., LibreOffice, OpenOffice), or edited and exported to other type of graphic format using modern vector manipulation programs.
 
 ## The software
 
@@ -42,7 +41,6 @@ If no web-server is available, **tcsBU** can be saved into any local directory a
 The first step is to read a TCS output file, by clicking on the `Load Data` button (top-left). Note that there is no need to manually edit the results in TCS (e.g. by using the *spring* algorithm). Once the TCS analysis is finished you can look for a GML file with extension `.graph`, usually found on the directory where the alignment used by TCS is. The GML (*Graph Modeling Language*) format is simply a text file format supporting network data with a very easy syntax. The GML specification can be found at [this](http://www.fim.uni-passau.de/en/theoretical-computer-science/projects/) site. Users should not touch (edit) the GML file unless they really know what they are doing!
 
 The user interface is self-intuitive. There is a `Help` button with more information on how to fiddle with the parameters of the *force-directed layout algorithm* of `d3.js`, plus information on how to define groups and classify haplotypes.
-
 
 ## Bug Tracking
 
@@ -81,8 +79,8 @@ grunt watch
 which will watch for any modification while editing, and will recompile anything if necessary.
 
 ## References
-1. Clement M, Posada D, Crandall KA (2000) TCS: a computer program to estimate gene genealogies. *Molecular Ecology* 9, 1657-1659.
-2. Templeton AR, Crandall KA, Sing CF (1992) A cladistic analysis of phenotypic associations with haplotypes inferred from restriction endonuclease mapping and DNA sequence data. III. Cladogram estimation. *Genetics* 132, 619-633.
+* Clement M, Posada D, Crandall KA (2000) TCS: a computer program to estimate gene genealogies. *Molecular Ecology* 9, 1657-1659.
+* Templeton AR, Crandall KA, Sing CF (1992) A cladistic analysis of phenotypic associations with haplotypes inferred from restriction endonuclease mapping and DNA sequence data. III. Cladogram estimation. *Genetics* 132, 619-633.
 
 
 
