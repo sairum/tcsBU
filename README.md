@@ -31,6 +31,7 @@ For a web-based installation, the **tcsBU** package can be saved into any direct
 * docs/
 * js/
 * css/
+* examples/
 
 ### Local installation
 
