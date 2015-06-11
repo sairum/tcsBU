@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+<title>tcsBU - TCS Beautifier</title>
+  <meta name="description" content="tcsBU - TCS Beautifier">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta charset="UTF-8">
+  <meta name="author" content="António Santos et al.">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <style>
+    h1 {
+      border-style: solid;
+      padding: 20px;
+      border-width: 1px;
+      width: 100%;
+      text-align: center;
+      font-size: 210%;
+    }
+    h2 {
+      width: 100%;
+      text-align: center;
+      font-size: 180%;
+    }
+    h3 {
+      width: 100%;
+      text-align: center;
+      font-size: 150%;
+    }
+    pre {
+      border-width: 1px;
+      width: 100%;
+      border-style: solid;
+      padding: 6px;
+      background-color: #aaaaaa;
+    }
+    p {
+      font-size: 120%;
+      line-height: 120%;
+    }
+    ul {
+      line-height: 150%;
+    }
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+    a:hover {
+      color: red;
+    }
+    img {
+      margin-right: 4px; 
+      margin-bottom: -3px; 
+      padding: -3px;
+    }
+  </style>
+</head>
+<body>
+<div>
+<h1>tcsBU - a TCS beautifier</h1>
+
+<p>
+<ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#software">The software</a>
+  <ul>
+    <li><a href="#dependencies">Dependencies</a></li>
+    <li><a href="#installation">Installation</a></li>
+  </ul>
+</li>
+<li><a href="#usage">Usage</a>
+  <ul>
+    <li><a href="#tcsfiles">Reading TCS files</a></li>
+    <li><a href="#labels">Haplotype labels in TCS files</a></li>
+    <li><a href="#force-directed">Force-directed layout algorithm</a></li>
+    <li><a href="#groups">Defining classification groups</a></li>
+    <li><a href="#haplotypes">Classifying haplotypes</a></li>
+    <li><a href="#editing">Editing the network</a></li>
+    <li><a href="#saving">Saving the network</a></li>
+  </ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+</p>
+
+<h2><a id="intro">Introduction</a></h2>
+
+<p>TCS <a href="#clem_al2000">(Clement <i>et al.</i>, 2000)</a> is among the most popular haplotype network reconstruction methods. Written in Java, it is based on the <i>Statistical Parsimony</i> algorithm developed by <a href="#temp_al1992">Templeton <i>et al.</i> (1992)</a>. Unfortunately, TCS has some major drawbacks related with its output: 1) the graphics are coarse and often not ready for publication, even after usage of the 'spring' method (force-directed layout algorithm) to improve network layout; 2) there is no built-in way of classifying haplotypes and displaying that information in haplogroups, and 3) when more than one network is present in the data, the software cannot use its 'spring' algorithm to layout multiple graphs, resulting in a set of overlapping networks that have to be disentangled manually. As a consequence, it takes a significant effort to edit the resulting POSTSCRIPT vector file in a vector manipulation software, such as Inkscape or Adobe Illustrator &reg;.</p>
+
+
+<p><b>tcsBU</b> (read as <i>TCS Bee You</i>) was developed to allow the production of publication-ready networks resulting from TCS analysis without too much effort. Users are able to classify haplotypes (for example, according to sampling locations or dates) and this information is displayed in pie-chart like haplogroups within the network. Groups can be classified using colors, patterns or a combination of both. The final network can be saved as a Scalable Vector Graphics (SVG) format, which can then be easily embedded in a modern word processor or edited and exported to other type of graphics format using a vector manipulation software.</p>
+</>
+
+<h2><a id="software">The software</a></h2>
+
+<h3><a id="dependencies">Dependencies</a></h3>
+<p><b>tcsBU</b> is a browser based javascript program that can be served by an HTTP server or can be installed directly into a standard folder and run by any modern browser. <b>tcsBU</b> does not impose any burden on the server besides serving the javascript libraries. All computations are done by the browser itself. <b>tcsBU</b> depends on a few third-party libraries (license type in parenthesis):</p>
+
+<ul>
+<li><a href="https://jquery.com/" target="_blank">JQuery</a> (MIT): the underlying Javascript engine</li>
+<li><a href="http://w2ui.com/" target="_blank">w2ui</a> (MIT): JQuery-based User Interface</li>
+<li><a href="http://d3js.org/" target="_blank">d3.js</a> (BSD): graphics engine (force-directed graph layout)</li>
+<li><a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver.js</a> (X11/MIT): implements file saving with the browser without depending on the "download" HTML5 attribute which is partially supported (some browsers, such as IE and Safari, do not support the "download" attribute yet)</li>
+<li><a href="https://github.com/emeeks/d3-svg-legend/" target="_blank">d3-svg-legend</a> (MIT): A modified version of this code - authored by Michael P Schroeder - was integrated into <b>tcsBU</b> source code.</li>
+</ul>
+
+<p>Because many of the aforementioned libraries dropped support for old versions of some browsers, <b>tcsBU</b> will only run on modern ones (Firefox 20+, Chrome, Chrome for Android, IE 10+, Opera 15+ and Safari 6.1+).</p>
+
+<h3><a id="installation">Installation</a></h3>
+
+<p>For a web-based installation, the <b>tcsBU</b> package can be saved into any directory under the webserver ROOT directory. No further steps are necessary, and users will be able to access the software by pointing their browsers at the specified directory. The only files/folders necessary are</p>
+
+<ul>
+<li>index.html
+<li>docs/
+<li>js/
+<li>css/
+</ul>
+
+<p>If no web-server is available, <b>tcsBU</b> can be saved into any local directory and run using the 'file://' protocol. If an network connection is available, users can click on the <i>index.html</i> file, which should automatically open the default browser. If no network connection is available, users should use <i>tcsbu.html</i> instead. The difference is that the latter will not try to download the necessary libraries (JQuery, w2ui, d3.js) from their respective Content Delivery Network (CDN) but will use the ones shipped with <b>tcsBU</b>.</p>
+
+<h2><a id="usage">Usage</a></h2>
+
+<h3><a id="tcsfiles">Reading TCS files</a></h3>
+
+<p>The first step is to read a TCS output file, by clicking on the <img style="height: 24px;" src="docs/figs/load_data.png" /> button (top-left). Search for GML files with extension <i>.graph</i>, usually found on the directory where the alignment used by TCS is. The GML (<i>Graph Modeling Language</i>) format is simply a text file format supporting network data with a very easy syntax. The GML specification can be found <a href="http://www.fim.uni-passau.de/en/theoretical-computer-science/projects/" target="blank">here</a>. The first few lines should look like this:</p>
+
+<pre>
+graph [
+   directed 0
+   node [
+      data [
+         Weight "outgroup weight=   0.01"
+         Frequency "frequency=3
+ Seq1
+ Seq4
+ Seq5
+"
+         Sequence "Sequence =
+AAA
+"
+      ]
+      id 0
+      label "Seq1"
+      graphics [
+.
+.
+.
+</pre>
+
+<p>This file should not be modified unless if strictly necessary. If so, note that spaces (tabulation) should be strictly kept, as the parser relies on the absolute position of some keywords to work properly. As long as this file is untouched, <b>tcsBU</b> can parse it easily. If the file is loaded without errors, the force-directed layout algorithm starts and a raw network is displayed.</p>
+
+<h3><a id="labels">Haplotype labels in TCS files</a></h3>
+
+<p>TCS does not pose any constraints on haplotype names other than using standard ASCII characters (letters, digits and some punctuation characters). However, the <i>d3.js</i> library does not allow labels to start with digits, and in <b>tcsBU</b> haplotype names are used as labels of some SVG elements. For this reason, <b>tcsBU will automatically append an 'L' to every label that starts with a digit (0-9)</b>. Note that this avoids early errors on loading data, but changes the original names of haplotypes. This is only important if a user is specifying a table of haplotypes/groups to match with group colors (see <a href="#haplotypes">Classifying haplotypes</a> below). In this case, the user should append an 'L' to all haplotype names started with a digit. The best option is to avoid labeling haplotypes with starting digits.</p>
+
+<h3><a id="force-directed">Force-directed graph layout</a></h3>
+
+<p>The force-directed layout algorithm is intuitively simple, although computationally intensive. It models the physics of a system where the haplogroups (technically called nodes or particles) are charged and repel each other, but their links (edges or connections) tie them together. The user can control several aspects of the force-directed layout algorithm, even while it is running. Please read the documentation at <a href="https://github.com/mbostock/d3/wiki/Force-Layout" target="_blank">D3.js Force-Layout</a> for a full explanation of these parameters. However, avoid tinkering with them. Default values seem to be adequate for most of the scenarios used for testing. Parameters are:</p>
+
+<ul>
+<li><b>Link distance [0.1 - 10 ]:</b> this is a constant that scales the distance (in graph space) between nodes; the distance between each two nodes equals the sum of their radii plus a constant (12 units); this distance (r1 + r2 + 12) is an optimal value, and the layout algorithm may deviate from it if necessary (see Link Strength); the Link Distance allows the user to shorten or stretch links between haplogroups</li>
+<li><b>Link strength [0 - 1]:</b> this sets the strength of all links; smaller values (closer to 0), indicate that links can stretch freely; values closer to 1 mean that links will be 'rigid'</li>
+<li><b>Friction [0 - 1]:</b>  this is closely approximate to a 'velocity decay'; in each iteration of the algorithm, haplogroup (nodes) velocities are reduced by the specified friction; a value of 1 corresponds to a frictionless environment, while a value of 0 freezes all haplogroups in place.</li> 
+<li><b>Charge: </b>each haplogroup has a charge proportional to their size; a negative value results in haplogroup repulsion, while a positive value results in haplogroup attraction; negative values should be used; this parameter scales individual charges, the smaller it is (the more negative) the larger the repulsion effect</li>
+<li><b>Gravity [0 - 1]:</b> this corresponds to a weak geometric constraint similar to a virtual spring connecting each node to the center of the layout; if set to 0 the network may slip outside the visible area</li>
+</ul>
+
+<h3><a id="groups">Defining classification groups</a></h3>
+
+<p>Groups are defined in the Groups Tab at the left pane of the window. After the initial run, there is always a 'Default' group (with a white color) which cannot be modified or deleted. Any haplotypes not classified will belong to this group. The user can add new groups and delete existing ones. Group names can be modified by double-clicking over them. <b>No two groups can share the same name</b> (the software will issue a warning) because this names are used as primary keys internally. Each time a group is added, it takes the default name 'New group' which should be immediately modified.</p>
+
+<p>Users can change the color and pattern of every group (except the 'Default'). The color picker has a limited number of colors, but users may input different ones using the input area in the color-picker</p>
+
+<div style="text-align: center;"><img style="text-align: center;" src="docs/figs/color-picker.png" /></div>
+
+<p>Colors should be provided in the traditional hexadecimal notation (e.g. #AF0026) using the input box in the lower-left corner of the color-picker. There are more than 16 million colors to chose from. See, for example, the <a href="http://www.w3schools.com/tags/ref_colorpicker.asp" target="_blank">w3school.com color picker</a> for choosing a color.</p>
+
+<p>By clicking on the <img style="height: 18px;" src="docs/figs/save.png" /> button on the Groups Tab bar, users can save the current list of groups and their respective colors and patterns in a CSV (comma separated value) text file that can then be read by any spreadsheet. The file format should use semicolons (;) instead of commas (,). An example is given below</p>
+
+<pre>
+Spain;#0af5d3;circles-1
+Morocco South; #aea4b6
+Morocco North; #54a1f2
+Spain North; #a2f565
+Italy; #7684fa
+Sardinia; #2425aa;lines-1
+Portugal;#af0fff
+France;#aaaa15
+</pre>
+
+<p>Note that each line should have at leastone name. Colors and patterns are optional and are allways read in the second and third column, respectively. Any color outside the allowed hexadecimal format (#000000 to #ffffff), or any pattern name not found on the list below, will be silently ignored. This file can also be reloaded later on through the <img style="height: 18px;" src="docs/figs/load.png" /> button, thus avoiding to reenter all group's definitions. For color definitions see <a href="#groups">Defining Groups</a> section. Patterns names can be one of</p>
+
+<pre>
+circles-1, circles-2, 
+lines-1, lines-2, lines-3, lines-4, lines-5, lines-6, lines-7, lines-8, 
+corss-1, cross-2
+</pre>
+
+<h3><a id="haplotypes">Classifying haplotypes</a></h3>
+
+<p>After defining classification groups (with their respective colors and/or patterns) a user can classify each haplotype in the Haplotype list, by double-clicking on their respective group's cell. A combo box will appear with all available groups. As for the groups, one can save or load this information. It is often preferable to save the raw haplotype list as a CSV formatted text file using the <img style="height: 18px;" src="docs/figs/save.png" /> button, and edit it in a spreadsheet. The format is quite simple, and consists of two columns, one with the name of the haplotypes and another with the name of the groups.</p>
+
+<pre>
+L1543_IT-GIO;Italy
+L1300_IT-SMR;Italy
+L1860_MA-ZAO;Morocco
+L2530_ES-IAL;Spain Alboran
+L1821_ES-HER;Northern Spain
+L1879_MA-RAS;Morocco
+</pre>
+
+<p>The haplotype names should match exactly those in the original TCS file (<i>.graph</i>). It is worth noticing that if there are haplotype names starting with a digit in the TCS file they will be automatically prepended with an 'L' (see <a href="#labels">Haplotype labels in TCS files</a>). This should be reflected in any CSV haplogtype list file. Conversely, the groups' names should match those on the groups' list. If no group list is defined or loaded, the group names will be ignored. The user should allways load or define the group classification before loading the haplotype classification!</p>
+
+
+<h3><a id="editing">Editing the network</a></h3>
+
+<p>Once the TCS network is loaded and the force-directed layout algorithm is started, users can edit the network. Zooming in or out is done with the mouse wheel or, if absent, using the appropriate icons on the toolbar.</p>
+
+<img src="docs/figs/toolbar.png" />
+
+<p>Some of the buttons are toggle-buttons, meaning that they are only effective when toggled on (they become yellow). To delete nodes or links, the respective buttons should be toggled on. When the mouse hovers through an element it turns red. A click will delete a node or a link.</p>
+
+<p>The Outline button will draw a thin line separating sectors of the haplogroups pie-charts. The Line width button specifies, in pixels, the default width of elements. The Legend allows toggling on and off a legend based on the groups' classification presented in the Groups Tab. The legend can be dragged to any part of the display.</p>
+
+<h3><a id="saving">Saving the network</a></h3>
+
+<p>The Save SVG button will save the resulting network into a text file. Note that all parts of the network, even if not currently visible, will be saved! The legend is not scalable, so it is important to scale the network accordingly.</p>
+
+<h2><a id="references">References</a></h2>
+<ul>
+<li><a id="clem_al2000">Clement M, Posada D, Crandall KA (2000) TCS: a computer program to estimate gene genealogies. <i>Molecular Ecology</i> 9, 1657-1659.</a>
+<li><a id="temp_al1992">Templeton AR, Crandall KA, Sing CF (1992) A cladistic analysis of phenotypic associations with haplotypes inferred from restriction endonuclease mapping and DNA sequence data. III. Cladogram estimation. <i>Genetics</i> 132, 619-633.</a>
+</ul>
+</div>
+</body>
+</html>

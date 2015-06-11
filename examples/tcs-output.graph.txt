@@ -1,0 +1,1118 @@
+graph [
+   directed 0
+   node [
+      data [
+         Weight "outgroup weight=   0.01"
+         Frequency "frequency=1
+ Seq1
+"
+         Sequence "Sequence =
+ATACAATTGTCCTCATGCAAGGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 0
+      label "Seq1"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 13.375
+            y -230.0
+            z 0.0
+         ]
+         width 45.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 21
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.00"
+         Frequency "frequency=1
+ In0
+"
+         Sequence "Sequence =
+ATGACAATTGTCCTCATGGAAGGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 13
+      label " "
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 50.875
+            y -170.0
+            z 0.0
+         ]
+         width 6.0
+         height 6.0
+         depth 1.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 21
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.01"
+         Frequency "frequency=1
+ Seq2
+"
+         Sequence "Sequence =
+ATGACAATTGTCCTCATGGAAGTACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 1
+      label "Seq2"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 88.375
+            y -230.0
+            z 0.0
+         ]
+         width 45.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 21
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.01"
+         Frequency "frequency=1
+ Seq9
+"
+         Sequence "Sequence =
+ATGATATTTGTCCTCATGGAAGGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTATAGGATGTGTTTTT
+"
+      ]
+      id 8
+      label "Seq9"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x -161.875
+            y -92.5
+            z 0.0
+         ]
+         width 45.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 31
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.01"
+         Frequency "frequency=1
+ Seq6
+"
+         Sequence "Sequence =
+ACGATATTTGTCCTCATGGAAGGAAATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 5
+      label "Seq6"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x -161.875
+            y -170.0
+            z 0.0
+         ]
+         width 45.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 30
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.01"
+         Frequency "frequency=1
+ Seq5
+"
+         Sequence "Sequence =
+ACGATATTTGTCCTCATGGAAGGGCATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 4
+      label "Seq5"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x -86.875
+            y -170.0
+            z 0.0
+         ]
+         width 45.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 30
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.28"
+         Frequency "frequency=1
+ Seq7
+"
+         Sequence "Sequence =
+ACGATATTTGTCCTCATGGAAGGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 6
+      label "Seq7"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x -86.875
+            y -92.5
+            z 0.0
+         ]
+         width 45.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 30
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.10"
+         Frequency "frequency=8
+ Seq4
+ Seq23
+ Seq24
+ Seq25
+ Seq26
+ Seq27
+ Seq28
+ Seq29
+"
+         Sequence "Sequence =
+ATGATATTTGTCCTCATGGAACGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 3
+      label "Seq4"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 5.625
+            y -92.5
+            z 0.0
+         ]
+         width 80.0
+         height 55.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 31
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.01"
+         Frequency "frequency=1
+ Seq3
+"
+         Sequence "Sequence =
+ATGATAATTGTCCTCATGGATGGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 2
+      label "Seq3"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 106.375
+            y -170.0
+            z 0.0
+         ]
+         width 45.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 29
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.00"
+         Frequency "frequency=1
+ In1
+"
+         Sequence "Sequence =
+ATGATAATTGTCCTCATGGAAGGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 14
+      label " "
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 78.625
+            y -92.5
+            z 0.0
+         ]
+         width 6.0
+         height 6.0
+         depth 1.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 29
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.43"
+         Frequency "frequency=7
+ Seq10
+ Seq11
+ Seq12
+ Seq13
+ Seq14
+ Seq18
+ Seq19
+"
+         Sequence "Sequence =
+ATGATATTTGTCCTCATGGAAGGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 9
+      label "Seq10"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 75.0
+         height 50.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 31
+         shape "Rectangle"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.01"
+         Frequency "frequency=1
+ Seq8
+"
+         Sequence "Sequence =
+ACTATATTTGTCCTCATGGAAGGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGGATGTGTTTTT
+"
+      ]
+      id 7
+      label "Seq8"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x -11.875
+            y -170.0
+            z 0.0
+         ]
+         width 45.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 30
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.00"
+         Frequency "frequency=1
+ In4
+"
+         Sequence "Sequence =
+"
+      ]
+      id 17
+      label " "
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 161.875
+            y -92.5
+            z 0.0
+         ]
+         width 6.0
+         height 6.0
+         depth 1.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 28
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.00"
+         Frequency "frequency=1
+ In5
+"
+         Sequence "Sequence =
+"
+      ]
+      id 18
+      label " "
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 161.875
+            y -170.0
+            z 0.0
+         ]
+         width 6.0
+         height 6.0
+         depth 1.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 27
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.00"
+         Frequency "frequency=1
+ In6
+"
+         Sequence "Sequence =
+"
+      ]
+      id 19
+      label " "
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 161.875
+            y -230.0
+            z 0.0
+         ]
+         width 6.0
+         height 6.0
+         depth 1.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 26
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.00"
+         Frequency "frequency=1
+ In7
+"
+         Sequence "Sequence =
+"
+      ]
+      id 20
+      label " "
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 161.875
+            y -283.0
+            z 0.0
+         ]
+         width 6.0
+         height 6.0
+         depth 1.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 25
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.03"
+         Frequency "frequency=2
+ Seq17
+ Seq22
+"
+         Sequence "Sequence =
+ATGATATTTGTCCTCATGGAAGGACATATTTTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGG-----TTTTT
+"
+      ]
+      id 12
+      label "Seq17"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 121.875
+            y -449.5
+            z 0.0
+         ]
+         width 50.0
+         height 25.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 23
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.00"
+         Frequency "frequency=1
+ In3
+"
+         Sequence "Sequence =
+"
+      ]
+      id 16
+      label " "
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 121.875
+            y -394.0
+            z 0.0
+         ]
+         width 6.0
+         height 6.0
+         depth 1.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 23
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.05"
+         Frequency "frequency=2
+ Seq15
+ Seq20
+"
+         Sequence "Sequence =
+ATGATATTTGTCCTCATGGAAGGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGG-----TTTTT
+"
+      ]
+      id 10
+      label "Seq15"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 161.875
+            y -338.5
+            z 0.0
+         ]
+         width 50.0
+         height 25.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 24
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.00"
+         Frequency "frequency=1
+ In2
+"
+         Sequence "Sequence =
+"
+      ]
+      id 15
+      label " "
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 201.875
+            y -394.0
+            z 0.0
+         ]
+         width 6.0
+         height 6.0
+         depth 1.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 22
+         shape "Oval"
+      ]
+   ]
+   node [
+      data [
+         Weight "outgroup weight=   0.03"
+         Frequency "frequency=2
+ Seq16
+ Seq21
+"
+         Sequence "Sequence =
+CTGATTTTTGTCCTCATGGAAGGACATATCCTATGAAAGCTGTTGCTATAACTATTAAAAGGAGGGTGATTCCAATATTTCAAGTTTCTTTAAGTATAAAAGAACCATAATAAATCCCTCGTCCGATGTGAATATAAATGCAAATAAAAAATAGTGAGGCTCCATTAGCATGTATATTACGAATTAATCATCCGTAATTTACATCGCGGCAAATGTGTGCGATTGATGAAAATGCAGAGGAAATGTCTGCGGTATAGTGTATTGCCAGAAATAGGCCGGTGAGAGTTTGTGTAATTAGACAAAGGCCTAATAAAGATCCAAAATTTCATATATAAGACAAGTTTGATGAGGTGGGTAAATCAATGAGCGAGTTATTAATAATATTTAGTAGAGG-----TTTTT
+"
+      ]
+      id 11
+      label "Seq16"
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 201.875
+            y -449.5
+            z 0.0
+         ]
+         width 50.0
+         height 25.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "center"
+         group 22
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 21
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         group 29
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 22
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         group 24
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 23
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         group 24
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 24
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         group 25
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 25
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         group 26
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 26
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         group 27
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 27
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         group 28
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 28
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         group 31
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 29
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         group 31
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 30
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         group 31
+         shape "Oval"
+      ]
+   ]
+   node [
+      id 31
+      label ""
+      graphics [
+         Image [
+            Type ""
+            Location ""
+         ]
+         center [
+            x 0.0
+            y 0.0
+            z 0.0
+         ]
+         width 20.0
+         height 20.0
+         depth 20.0
+      ]
+      vgj [
+         labelPosition "below"
+         shape "Oval"
+      ]
+   ]
+   edge [
+      linestyle "solid"
+      label "395"
+      data [
+         Changes "A	-"
+      ]
+      source 9
+      target 17
+   ]
+   edge [
+      linestyle "solid"
+      label "21"
+      data [
+         Changes "T	A"
+      ]
+      source 2
+      target 14
+   ]
+   edge [
+      linestyle "solid"
+      label "3"
+      data [
+         Changes "G	T"
+      ]
+      source 6
+      target 7
+   ]
+   edge [
+      linestyle "solid"
+      label "399"
+      data [
+         Changes "-	G"
+      ]
+      source 20
+      target 10
+   ]
+   edge [
+      linestyle "solid"
+      label "6"
+      data [
+         Changes "T	A"
+      ]
+      source 15
+      target 11
+   ]
+   edge [
+      linestyle "solid"
+      label "397"
+      data [
+         Changes "G	-"
+      ]
+      source 18
+      target 19
+   ]
+   edge [
+      linestyle "solid"
+      label "391"
+      data [
+         Changes "T	G"
+      ]
+      source 8
+      target 9
+   ]
+   edge [
+      linestyle "solid"
+      label "22"
+      data [
+         Changes "C	G"
+      ]
+      source 3
+      target 9
+   ]
+   edge [
+      linestyle "solid"
+      label "19"
+      data [
+         Changes "C	G"
+      ]
+      source 0
+      target 13
+   ]
+   edge [
+      linestyle "solid"
+      label "5"
+      data [
+         Changes "C	T"
+      ]
+      source 13
+      target 14
+   ]
+   edge [
+      linestyle "solid"
+      label "7"
+      data [
+         Changes "T	A"
+      ]
+      source 14
+      target 9
+   ]
+   edge [
+      linestyle "solid"
+      label "30"
+      data [
+         Changes "T	C"
+      ]
+      source 12
+      target 16
+   ]
+   edge [
+      linestyle "solid"
+      label "24"
+      data [
+         Changes "G	A"
+      ]
+      source 4
+      target 6
+   ]
+   edge [
+      linestyle "solid"
+      label "23"
+      data [
+         Changes "T	G"
+      ]
+      source 13
+      target 1
+   ]
+   edge [
+      linestyle "solid"
+      label "398"
+      data [
+         Changes "T	-"
+      ]
+      source 19
+      target 20
+   ]
+   edge [
+      linestyle "solid"
+      label "31"
+      data [
+         Changes "C	T"
+      ]
+      source 16
+      target 10
+   ]
+   edge [
+      linestyle "solid"
+      label "396"
+      data [
+         Changes "T	-"
+      ]
+      source 17
+      target 18
+   ]
+   edge [
+      linestyle "solid"
+      label "1"
+      data [
+         Changes "A	C"
+      ]
+      source 10
+      target 15
+   ]
+   edge [
+      linestyle "solid"
+      label "2"
+      data [
+         Changes "C	T"
+      ]
+      source 6
+      target 9
+   ]
+   edge [
+      linestyle "solid"
+      label "25"
+      data [
+         Changes "A	C"
+      ]
+      source 5
+      target 6
+   ]
+]
+
