@@ -63,13 +63,13 @@ function createPattern(pat, col) {
       break;      
     case 'lines-7':
       p.append('path')
-       .attr('d', 'M4,-1 l-10,10 M-1,4 l-10,10')
+       .attr('d', 'M4,-1 l-10,10 M2,11 l10,-10')
        .attr('stroke', '#000000')
        .attr('stroke-width', 0.5);
       break;
     case 'lines-8':
       p.append('path')
-       .attr('d', 'M4,-1 l-10,10 M-1,4 l-10,10')
+       .attr('d', 'M4,-1 l-10,10 M2,11 l10,-10')
        .attr('stroke', '#000000')
        .attr('stroke-width', 1.5);
       break;        
