@@ -2093,11 +2093,15 @@ function insertLegend(){
     });
     
     $('#groups').click(function(){
-      saveExamples('groups.csv');
+      saveExamples('groups.txt');
     });
     
     $('#haplotypes').click(function(){
-      saveExamples('haplotypes.csv');
+      saveExamples('haplotypes.txt');
+    });
+    
+    $("#gpatterns").click(function(){
+      saveExamples("groups-patterns.txt");
     });
     
     $('#help').click(function(){

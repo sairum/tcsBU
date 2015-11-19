@@ -1,0 +1,9 @@
+Spain;#0af5d3
+Morocco South; #aea4b6
+Morocco North; #54a1f2
+Spain North; #a2f565
+Italy; #7684fa
+Sardinia; #2425aa
+Portugal;#af0fff
+France;#aaaa15
+
