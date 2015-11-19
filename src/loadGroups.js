@@ -14,10 +14,11 @@ function loadGroups(event) {
   var reader = new FileReader();
 
   reader.onload = function() {
-    var i,j,p,f;
+    var i,j,k,p,f;
     var text = reader.result;
     var lines = text.split('\n');
     var line, l, name, color, pattern, t;
+    var names = [];
     var g = [ { recid: 'Default', color: 'ffffff', pattern: 'none', editable: false } ];
     for( i=0; i<lines.length; i++) {    
       line=lines[i].trim();
@@ -26,17 +27,21 @@ function loadGroups(event) {
         if ( l.length === 2 || l.length === 3 ) {   // Accept only lines with two or three fields
           name = l[0].trim();
           if( name !== '' ) {                       // There is at least a label or name or something as a first field...
-            color = l[1].trim();                    // read the color
-            if (/^#[0-9a-f]{3,6}$/i.test(color)) {  // check if it is a valid RGB color (e.g, #a2ff4b or #a0f)
-              color = color.substr(1);              // strip the # prefix
+            k = names.indexOf(name);                // Check if this name is already in list
+            if ( k == -1 ) {
+              names.push(name);                     // Add name to the names' list
+              color = l[1].trim();                    // read the color
+              if (/^#[0-9a-f]{3,6}$/i.test(color)) {  // check if it is a valid RGB color (e.g, #a2ff4b or #a0f)
+                color = color.substr(1);              // strip the # prefix
+              }
+              pattern = 'none';
+              if( typeof l[2] !== 'undefined' ) {   // read an optional pattern
+                p = l[2].trim();
+                j = pattern_names.filter(function(v, i) { return v.id === p; })[0];
+                if (typeof j !== 'undefined') pattern = p;              
+              }
+              g.push({ recid: name, color: color, pattern: pattern });
             }
-            pattern = 'none';
-            if( typeof l[2] !== 'undefined' ) {   // read an optional pattern
-              p = l[2].trim();
-              j = pattern_names.filter(function(v, i) { return v.id === p; })[0];
-              if (typeof j !== 'undefined') pattern = p;              
-            }
-            g.push({ recid: name, color: color, pattern: pattern });
           }
         }
       }
