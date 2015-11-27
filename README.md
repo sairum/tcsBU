@@ -1,5 +1,11 @@
 # tcsBU
 
+> **NOTE**: A paper describing tcsBU has been published in the journal *Bioinformatics* and is already available at their [Advance Access](http://bioinformatics.oxfordjournals.org/content/early/2015/11/18/bioinformatics.btv636.long) site. Please cite as 
+
+>> Santos, AM, Cabezas MP, Tavares AI, Xavier R, Branco M (2015) tcsBU: a tool to extend TCS network layout and visualization. *Bioinformatics*, btv636 (doi: 10.1093/bioinformatics/btv636)
+
+> **NOTE2**: The link to the online version of the software provided in the paper (http://cibio.up.pt/software/tcsBU) is not working due to a server misconfiguration that we cannot solve. However, using the complete URL (http://cibio.up.pt/software/tcsBU/index.html) should work for now.
+
 ## a TCS network beautifier
 
 TCS (Clement *et al.* 2000) is among the most popular haplotype network reconstruction methods. Written in Java, it is based on the *Statistical Parsimony* algorithm developed by Templeton *et al.* (1992). Unfortunately, TCS has some major limitations related with its output: 
