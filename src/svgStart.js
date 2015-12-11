@@ -80,6 +80,12 @@ function svgStart() {
   var h = $('#gview').height();
   
   /*
+   * Remove paper advertisement from main DIV
+   */
+  
+  $('#gview').empty();
+  
+  /*
    * Define the main svg element 
    */
   
