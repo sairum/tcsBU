@@ -61,7 +61,16 @@
                         '</div>'+
                         '</div>'
                        );
-    layout.content('main', '<div id="gview" style="width=100%; height=100%;"></div>');
+    layout.content('main', '<div id="gview" style="width=100%; height=100%;">'+
+                           '<div style="width=50%; padding: 20%; font-size: 160%;">'+
+                           '<b>A paper describing tcsBU has been published in the journal <i>Bioinformatics</i>'+
+                           ' and is already available at their web site. '+
+                           'Please cite as:</b><p>Santos, AM, Cabezas MP, Tavares AI, Xavier R, '+
+                           'Branco M (2015) tcsBU: a tool to extend TCS network layout and '+
+                           'visualization. <i>Bioinformatics</i>, btv636 '+
+                           '(<a href="http://bioinformatics.oxfordjournals.org/content/early/2015/10/28/bioinformatics.btv636.abstract" target="blank">doi: 10.1093/bioinformatics/btv636</a>)'+
+                           '</div>'+
+                           '</div>');    
     layout.content('bottom','');
      
     /*
