@@ -33,7 +33,7 @@ function getGroupsGrid(style){
   $().w2grid({
     name: 'groups',
     multiSelect: false,
-    show: {header: false, toolbar: true, footer: true, lineNumbers: false, toolbarSearch: false, toolbarReload: false, toolbarColumns: false, toolbarSave: false, toolbarAdd: false, toolbarDelete: false, toolbarEdit: false },
+    show: {header: false, toolbar: true, footer: true, lineNumbers: false, toolbarSearch: false, toolbarInput:false, toolbarReload: false, toolbarColumns: false, toolbarSave: false, toolbarAdd: false, toolbarDelete: false, toolbarEdit: false },
     columns: [
       { field: 'recid', caption: 'Group', size: '50%', sortable: false, resizable: true, editable: { type: 'text' }, 
         render: function (r) {

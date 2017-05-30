@@ -202,7 +202,7 @@ function svgStart() {
   var h = $('#gview').height();
   
   /*
-   * Remove advertisement from main DIV
+   * Remove paper advertisement from main DIV
    */
   
   $('#gview').empty();
@@ -458,6 +458,7 @@ function svgStart() {
   updateSVG();
   
 }
+
 /*
  * This function reclassifies (changes the group and color) a given haplotype
  * in the haplotype list (referred by its 'index') and changes the svg graph
@@ -929,7 +930,7 @@ function loadHaplotypes(e) {
   
   if (w2ui.groups.records.length > 1 ) {  //Groups already loaded! Override?
     w2confirm ('Colors will be replaced in the haplotype list! If<br>'+
-               'any color have already been assigned they will be<br>'+
+               'any color has already been assigned they will be<br>'+
                'overriden! Load the colors\' list, anyway?       <br>',
                'Replace active group\'s list?').yes(function(){reader.readAsText(input.files[0]); } );
   } else {
@@ -938,6 +939,7 @@ function loadHaplotypes(e) {
 }
 
   
+
 /*
  * Reads a CSV file with group names and colors 
  */
@@ -1318,7 +1320,7 @@ function getGroupsGrid(style){
   $().w2grid({
     name: 'groups',
     multiSelect: false,
-    show: {header: false, toolbar: true, footer: true, lineNumbers: false, toolbarSearch: false, toolbarReload: false, toolbarColumns: false, toolbarSave: false, toolbarAdd: false, toolbarDelete: false, toolbarEdit: false },
+    show: {header: false, toolbar: true, footer: true, lineNumbers: false, toolbarSearch: false, toolbarInput:false, toolbarReload: false, toolbarColumns: false, toolbarSave: false, toolbarAdd: false, toolbarDelete: false, toolbarEdit: false },
     columns: [
       { field: 'recid', caption: 'Group', size: '50%', sortable: false, resizable: true, editable: { type: 'text' }, 
         render: function (r) {
@@ -1506,6 +1508,7 @@ function getGroupsGrid(style){
   if(w2ui.groups) return w2ui.groups;
   else return null;
 }
+
 // The haplotype's grid
 
 
@@ -1537,7 +1540,7 @@ function getHaplotypesGrid(style){
   $().w2grid({
     name: 'haplotypes',
     multiSelect: false,
-    show: {header: false, toolbar: true, footer: true, lineNumbers: false, toolbarSearch: false, toolbarReload: false, toolbarColumns: false, toolbarAdd: false, toolbarDelete: false, toolbarEdit: false },
+    show: {header: false, toolbar: true, footer: true, lineNumbers: false, toolbarSearch: false, toolbarInput:false, toolbarReload: false, toolbarColumns: false, toolbarAdd: false, toolbarDelete: false, toolbarEdit: false },
     columns: [
       { field: 'recid', caption: 'Label', size: '55%', sortable: true, resizable: true },
       { field: 'haplogroup', hidden: true },
@@ -1618,6 +1621,7 @@ function getHaplotypesGrid(style){
   if(w2ui.haplotypes) return w2ui.haplotypes;
   else return null;
 }  
+
 /*
  * Construct the layout
  */
@@ -2082,11 +2086,12 @@ function insertLegend(){
                            '<b>A paper describing tcsBU has been published in the journal <i>Bioinformatics</i>'+
                            ' and is already available at their web site. '+
                            'Please cite as:</b><p>Santos, AM, Cabezas MP, Tavares AI, Xavier R, '+
-                           'Branco M (2015) tcsBU: a tool to extend TCS network layout and '+
+                           'Branco M (2016) tcsBU: a tool to extend TCS network layout and '+
                            'visualization. <i>Bioinformatics</i>, btv636 '+
-                           '(<a href="http://bioinformatics.oxfordjournals.org/content/early/2015/10/28/bioinformatics.btv636.abstract" target="blank">doi: 10.1093/bioinformatics/btv636</a>)'+
+                           '(<a href="https://academic.oup.com/bioinformatics/article/32/4/627/1744448/" '+
+                           'target="blank">doi: 10.1093/bioinformatics/btv636</a>)'+
                            '</div>'+
-                           '</div>');
+                           '</div>');    
     layout.content('bottom','');
      
     /*

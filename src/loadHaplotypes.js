@@ -137,7 +137,7 @@ function loadHaplotypes(e) {
   
   if (w2ui.groups.records.length > 1 ) {  //Groups already loaded! Override?
     w2confirm ('Colors will be replaced in the haplotype list! If<br>'+
-               'any color have already been assigned they will be<br>'+
+               'any color has already been assigned they will be<br>'+
                'overriden! Load the colors\' list, anyway?       <br>',
                'Replace active group\'s list?').yes(function(){reader.readAsText(input.files[0]); } );
   } else {

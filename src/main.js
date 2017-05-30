@@ -66,9 +66,10 @@
                            '<b>A paper describing tcsBU has been published in the journal <i>Bioinformatics</i>'+
                            ' and is already available at their web site. '+
                            'Please cite as:</b><p>Santos, AM, Cabezas MP, Tavares AI, Xavier R, '+
-                           'Branco M (2015) tcsBU: a tool to extend TCS network layout and '+
+                           'Branco M (2016) tcsBU: a tool to extend TCS network layout and '+
                            'visualization. <i>Bioinformatics</i>, btv636 '+
-                           '(<a href="http://bioinformatics.oxfordjournals.org/content/early/2015/10/28/bioinformatics.btv636.abstract" target="blank">doi: 10.1093/bioinformatics/btv636</a>)'+
+                           '(<a href="https://academic.oup.com/bioinformatics/article/32/4/627/1744448/" '+
+                           'target="blank">doi: 10.1093/bioinformatics/btv636</a>)'+
                            '</div>'+
                            '</div>');    
     layout.content('bottom','');

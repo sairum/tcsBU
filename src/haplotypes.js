@@ -29,7 +29,7 @@ function getHaplotypesGrid(style){
   $().w2grid({
     name: 'haplotypes',
     multiSelect: false,
-    show: {header: false, toolbar: true, footer: true, lineNumbers: false, toolbarSearch: false, toolbarReload: false, toolbarColumns: false, toolbarAdd: false, toolbarDelete: false, toolbarEdit: false },
+    show: {header: false, toolbar: true, footer: true, lineNumbers: false, toolbarSearch: false, toolbarInput:false, toolbarReload: false, toolbarColumns: false, toolbarAdd: false, toolbarDelete: false, toolbarEdit: false },
     columns: [
       { field: 'recid', caption: 'Label', size: '55%', sortable: true, resizable: true },
       { field: 'haplogroup', hidden: true },
