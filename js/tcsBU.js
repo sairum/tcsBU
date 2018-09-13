@@ -652,6 +652,7 @@ function loadGraph(e) {
     var multilabels = false;
     var frequency,radius,x, y, haplogroup, group, label, changes, source, target;
     var labels = [];
+    var area = Math.PI*Math.pow(standardRadius,2);
     for(var i=0;i<lines.length;i++) {
       if(lines[i].indexOf('node [') == 3) newnode = true;
       if(lines[i].indexOf('edge [') == 3) newedge = true;
@@ -689,7 +690,7 @@ function loadGraph(e) {
                * For transition nodes use a radius = frequency*standardRadius;
                */
               
-              radius = frequency*standardRadius;
+              radius = Math.sqrt(frequency*area/Math.PI); 
             }
             
             /*
@@ -791,6 +792,7 @@ function loadGraph(e) {
   reader.readAsText(input.files[0]);
 }
   
+
  /*
  * Reads a CSV file with haplotype names and groups 
  */
@@ -1240,7 +1242,7 @@ function saveSVG(){
 }
 function saveExamples(fileName){
   if(filesave) {
-
+    
         // for non-IE
     if (!window.ActiveXObject) {
         var save = document.createElement('a');
@@ -1285,6 +1287,7 @@ function saveExamples(fileName){
             'FileSave.js is unsupported!');
   }
 }
+
 /*
  * The group's grid
  */
