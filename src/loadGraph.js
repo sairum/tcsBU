@@ -35,6 +35,7 @@ function loadGraph(e) {
     var multilabels = false;
     var frequency,radius,x, y, haplogroup, group, label, changes, source, target;
     var labels = [];
+    var area = Math.PI*Math.pow(standardRadius,2);
     for(var i=0;i<lines.length;i++) {
       if(lines[i].indexOf('node [') == 3) newnode = true;
       if(lines[i].indexOf('edge [') == 3) newedge = true;
@@ -72,7 +73,7 @@ function loadGraph(e) {
                * For transition nodes use a radius = frequency*standardRadius;
                */
               
-              radius = frequency*standardRadius;
+              radius = Math.sqrt(frequency*area/Math.PI); 
             }
             
             /*
