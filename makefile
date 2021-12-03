@@ -5,13 +5,13 @@ CAT =	@sed '/\#DEBUG/,/!DEBUG/d'
 
 cssfiles = src/css/tcsBU.scss
 
-tcsbufiles = src/tcsbu/src/*.js
+tcsbu = src/tcsbu/src/*.js
 
 css: $(cssfiles)
 	@echo Built style.css
 	@sassc src/css/tcsBU.scss css/tcsBU.css
 	
-tcsbujs: $(tcsbufiles)
+tcsbujs: $(tcsbu)
 	@echo Building tcsBU.js
 	@echo '/* tcsBU 1.1 (nightly) (c)  amsantos@fc.up.pt */' > js/tcsBU.js
 	@echo '"use strict";' >> js/tcsBU.js
