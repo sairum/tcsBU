@@ -67,7 +67,8 @@ Your contributions are welcome. However, there are a few things you need to know
 
 ## Forking
 
-This software uses a standar makefile to automate some tasks (concatenation of javascript files, compression, etc). It makes use og inotify on UNIX systems to detect changes on partial componentes of the javascript code and concatenate them into a single file. In the top most directory (where the makefile is located) just do
+
+This software uses a standard makefile to automate some tasks (concatenation of javascript files, compression, etc). It makes use of `inotifywait` command found on many UNIXes or UNIX like systems to detect changes on files. If changes on the component javascript files are detected the system rebuilds the whole library by concatenating individual javascript files into *tcsBU.js* file, which is minified subsequently. To use the system just change to the top most directory (where the makefile is located) and issue the following command:
 
 ```
 make watch
