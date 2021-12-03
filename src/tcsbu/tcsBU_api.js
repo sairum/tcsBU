@@ -120,3 +120,4 @@
   } else {
     w2alert('The File APIs are not fully supported by your browser.');
   }
+

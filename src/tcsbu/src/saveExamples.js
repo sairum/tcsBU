@@ -1,6 +1,6 @@
 function saveExamples(fileName){
   if(filesave) {
-
+    
         // for non-IE
     if (!window.ActiveXObject) {
         var save = document.createElement('a');

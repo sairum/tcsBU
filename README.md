@@ -1,12 +1,12 @@
 # tcsBU
 
-> **NOTE**: A paper describing tcsBU has been published in the journal *Bioinformatics* and is already available at their [Advance Access](http://bioinformatics.oxfordjournals.org/content/early/2015/11/18/bioinformatics.btv636.long) site. Please cite as 
-
->> Santos, AM, Cabezas MP, Tavares AI, Xavier R, Branco M (2015) tcsBU: a tool to extend TCS network layout and visualization. *Bioinformatics*, btv636 (doi: 10.1093/bioinformatics/btv636)
+> **NOTE 3**: Until further notice, tcsBU online version (http://cibio.up.pt/software/tcsBU/index.html) will be not available due to a change in the Internet Service Provider. Currently, CIBIO's Website is not hosted directly by the University of Porto. You can still use the current version of tcsBU by selecting the master branch and downloading the files of this repository, saving them in any folder. Go to that folder and click on *index.html* or open it with any modern browser.
 
 > **NOTE2**: The link to the online version of the software provided in the paper (http://cibio.up.pt/software/tcsBU) is not working due to a server misconfiguration that we cannot solve. However, using the complete URL (http://cibio.up.pt/software/tcsBU/index.html) should work for now.
 
-> **NOTE 3**: Until further notice, tcsBU online version (http://cibio.up.pt/software/tcsBU/index.html) will be not available due to a change in the Internet Provider. I can still use the current version of tcsBU by selecting the master branch and downloading the files of this repository, saving them in any folder. Go to that folder and click on *index.html* or open it with any modern browser.
+> **NOTE**: A paper describing tcsBU has been published in the journal *Bioinformatics* and is already available at their [Advance Access](http://bioinformatics.oxfordjournals.org/content/early/2015/11/18/bioinformatics.btv636.long) site. Please cite as 
+
+>> Santos, AM, Cabezas MP, Tavares AI, Xavier R, Branco M (2015) tcsBU: a tool to extend TCS network layout and visualization. *Bioinformatics*, btv636 (doi: 10.1093/bioinformatics/btv636)
 
 ## a TCS network beautifier
 
