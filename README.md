@@ -6,6 +6,8 @@
 
 > **NOTE2**: The link to the online version of the software provided in the paper (http://cibio.up.pt/software/tcsBU) is not working due to a server misconfiguration that we cannot solve. However, using the complete URL (http://cibio.up.pt/software/tcsBU/index.html) should work for now.
 
+> **NOTE 3**: Until further notice, tcsBU online version (http://cibio.up.pt/software/tcsBU/index.html) will be not available due to a change in the Internet Provider. I can still use the current version of tcsBU by selecting the master branch and downloading the files of this repository, saving them in any folder. Go to that folder and click on *index.html* or open it with any modern browser.
+
 ## a TCS network beautifier
 
 TCS (Clement *et al.* 2000) is among the most popular haplotype network reconstruction methods. Written in Java, it is based on the *Statistical Parsimony* algorithm developed by Templeton *et al.* (1992). Unfortunately, TCS has some major limitations related with its output: 
