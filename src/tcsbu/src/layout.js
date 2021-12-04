@@ -18,8 +18,8 @@ function getLayout(style, groups, haplotypes){
           ],
           onClick: function (id) {
             switch(id.target){
-              case 'tab1': w2ui.Layout.content('left',haplotypes); break;
-              case 'tab2': w2ui.Layout.content('left',groups); break;
+              case 'tab1': w2ui.Layout.html('left',haplotypes); break;
+              case 'tab2': w2ui.Layout.html('left',groups); break;
             }  
           }
           

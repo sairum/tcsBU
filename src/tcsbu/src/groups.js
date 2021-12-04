@@ -56,10 +56,10 @@ function getGroupsGrid(style){
     ],
     toolbar: {
       items: [
-        { type: 'button', id: 'add_group', caption: 'Add', icon: 'w2ui-icon-plus' },
-        { type: 'button', id: 'del_group', caption: 'Delete', icon: 'w2ui-icon-cross' },
-        { type: 'button', id: 'load_group', caption: 'Load', icon: 'icon-folder-open' },
-        { type: 'button', id: 'save_group', caption: 'Save', icon: 'icon-file-save' }
+        { type: 'button', id: 'add_group', text: 'Add', icon: 'w2ui-icon-plus' },
+        { type: 'button', id: 'del_group', text: 'Delete', icon: 'w2ui-icon-cross' },
+        { type: 'button', id: 'load_group', text: 'Load', icon: 'icon-folder-open' },
+        { type: 'button', id: 'save_group', text: 'Save', icon: 'icon-file-save' }
       ],
       onClick: function (e) {
         switch(e.target){

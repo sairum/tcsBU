@@ -1,4 +1,5 @@
 # tcsBU
+> **NOTE 4**: **This version of tcsBU (v1.2) is experimental!** It is based on the most current version of [w2ui](https://w2ui.com/web/home) and [JQuery](https://jquery.com/). Please change to branch *master* or *v1.1* and download that version instead. This code may beak at anytime because it uses the online versions of both javascript libraries mentioned (through their respective CDNs) and these may break compatibility with the javascript code of tcsBU.
 
 > **NOTE 3**: Until further notice, tcsBU online version (http://cibio.up.pt/software/tcsBU/index.html) will be not available due to a change in the Internet Service Provider. Currently, CIBIO's Website is not hosted directly by the University of Porto. You can still use the current version of tcsBU by selecting the master branch and downloading the files of this repository, saving them in any folder. Go to that folder and click on *index.html* or open it with any modern browser.
 
@@ -23,8 +24,8 @@ As a consequence, it takes a significant effort to edit the resulting PostScript
 **tcsBU** is a browser-based javascript program that can be served by an HTTP server or can be installed directly into a standard folder and run directly by any modern browser. In a server-based installation **tcsBU** does not impose any burden on the server besides serving the javascript libraries. All computations are done by the browser itself. **tcsBU** depends on a few third-party libraries (license type in parenthesis):
 
 - [JQuery](https://jquery.com/) (MIT): the underlying Javascript engine
-- [w2ui](http://w2ui.com/) (MIT): JQuery-based User Interface
-- [d3.js](http://d3js.org/) (BSD): graphics engine (force-directed graph layout)
+- [w2ui](https://w2ui.com/) (MIT): JQuery-based User Interface
+- [d3.js](https://d3js.org/) (BSD): graphics engine (force-directed graph layout)
 - [FileSaver.js](https://github.com/eligrey/FileSaver.js/) (X11/MIT): implements file saving with the browser without depending on the `download` HTML5 attribute which is partially supported (some browsers, such as IE and Safari, do not support the "download" attribute yet)
 - [d3-svg-legend](https://github.com/emeeks/d3-svg-legend/) (MIT): A modified version of this code, authored by Michael P Schroeder, was integrated into **tcsBU** source code
 
