@@ -8,13 +8,13 @@ function getLayout(style, groups, haplotypes){
     padding : 0,
     panels  : [
       { type: 'top', size: 40, resizable: false, style: style },
-      { type: 'left', size: 260, maxSize: 260, resizable: true, title: 'Data', style: style,
+      { type: 'left', size: 350, maxSize: 350, resizable: true, title: 'Data', style: style,
         tabs: {
           name: 'tabs',
           active: 'tab1',
           tabs: [
-            { id: 'tab1', caption: 'Haplotypes' },
-            { id: 'tab2', caption: 'Groups' },
+            { id: 'tab1', text: 'Haplotypes' },
+            { id: 'tab2', text: 'Groups' },
           ],
           onClick: function (id) {
             switch(id.target){
@@ -29,17 +29,17 @@ function getLayout(style, groups, haplotypes){
       { type: 'main', size: '100%', overflow: 'hidden', style: style,
         toolbar: {
           items: [
-            { id: 'btn-svgsave', type: 'button', caption: 'Save SVG', icon: 'icon-file-svg', disabled: true },
-              //{ id: 'btn-pdfsave', type: 'button', caption: 'Save PDF', icon: 'icon-file-pdf-o', disabled: true },
+            { id: 'btn-svgsave', type: 'button', text: 'Save SVG', icon: 'icon-file-svg', disabled: true },
+              //{ id: 'btn-pdfsave', type: 'button', text: 'Save PDF', icon: 'icon-file-pdf-o', disabled: true },
             { type: 'break' },
-            { id: 'btn-zoomin', class: 'zoom-btn', type: 'button', caption: 'Zoom In', icon: 'icon-zoom-in', disabled: true },
-            { id: 'btn-zoomout', class: 'zoom-btn', type: 'button', caption: 'Zoom Out', icon: 'icon-zoom-out', disabled: true },
+            { id: 'btn-zoomin', class: 'zoom-btn', type: 'button', text: 'Zoom In', icon: 'icon-zoom-in', disabled: true },
+            { id: 'btn-zoomout', class: 'zoom-btn', type: 'button', text: 'Zoom Out', icon: 'icon-zoom-out', disabled: true },
             { type: 'break' },
-            { id: 'btn-delnode', type: 'check', caption: 'Delete Node', icon: 'icon-delete-node', disabled: true, checked: false },
-            { id: 'btn-dellink', type: 'check', caption: 'Delete Link', icon: 'icon-delete-link', disabled: true, checked: false },
+            { id: 'btn-delnode', type: 'check', text: 'Delete Node', icon: 'icon-delete-node', disabled: true, checked: false },
+            { id: 'btn-dellink', type: 'check', text: 'Delete Link', icon: 'icon-delete-link', disabled: true, checked: false },
             { type: 'break' },
-            { id: 'btn-outline', type: 'check', caption: 'Outline', icon: 'icon-outline', disabled: true, checked: false },
-            { id: 'btn-lwidth', type: 'menu', caption: 'Line width', icon: 'icon-line-width', disabled: true,
+            { id: 'btn-outline', type: 'check', text: 'Outline', icon: 'icon-outline', disabled: true, checked: false },
+            { id: 'btn-lwidth', type: 'menu', text: 'Line width', icon: 'icon-line-width', disabled: true,
                   items: [
                     { text: '0.1 px', lwidth: "0.1" }, 
                     { text: '0.2 px', lwidth: "0.2" }, 
@@ -51,7 +51,7 @@ function getLayout(style, groups, haplotypes){
                     { text: '2.0 px', lwidth: "2.0" }
                   ]                
              },
-             { id: 'btn-legend', type: 'check', caption: 'Legend', icon: 'icon-legend', disabled: true, checked: false },
+             { id: 'btn-legend', type: 'check', text: 'Legend', icon: 'icon-legend', disabled: true, checked: false },
           ],
           onClick: function (e) {
             var target = e.target;

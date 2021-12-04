@@ -35,17 +35,17 @@ function getGroupsGrid(style){
     multiSelect: false,
     show: {header: false, toolbar: true, footer: true, lineNumbers: false, toolbarSearch: false, toolbarInput:false, toolbarReload: false, toolbarColumns: false, toolbarSave: false, toolbarAdd: false, toolbarDelete: false, toolbarEdit: false },
     columns: [
-      { field: 'recid', caption: 'Group', size: '50%', sortable: false, resizable: true, editable: { type: 'text' }, 
+      { field: 'recid', caption: 'Group', size: '45%', sortable: false, resizable: false, editable: { type: 'text' },
         render: function (r) {
           return '<div style="font-weight: bold">'+r.recid+'</div>';
         }
       },
-      { field: 'color', caption: 'Color', size: '25%', sortable: false, resizable: true, editable: { type: 'color'},
+      { field: 'color', caption: 'Color', size: '20%', sortable: false, resizable: false, editable: { type: 'color'},
         render: function (r) {
           return '<div style="background-color: #'+r.color+'">&nbsp;</div>';
         }
       },
-      { field: 'pattern', caption: 'Pattern', size: '25%', sortable: false, resizable: true, editable: { type: 'combo', items: pattern_names, filter: false },
+      { field: 'pattern', caption: 'Pattern', size: '35%', sortable: false, resizable: false, editable: { type: 'combo', items: pattern_names, filter: false },
         render: function (r) {
           return '<div>'+r.pattern+'</div>';
         }

@@ -33,9 +33,9 @@
      
     var layout = getLayout(style, groups, haplotypes);
     
-    layout.content('top','<div style="float: left;"><button id="loadData" class="w2ui-btn">Load Data</button></div><div style="float: right;"><button id="help" class="w2ui-btn">Help</button></div>');
-    layout.content('left',w2ui.haplotypes);
-    layout.content('right',  
+    layout.html('top','<div style="float: left;"><button id="loadData" class="w2ui-btn">Load Data</button></div><div style="float: right;"><button id="help" class="w2ui-btn">Help</button></div>');
+    layout.html('left',w2ui.haplotypes);
+    layout.html('right',
                         '<div style="width=100%; height=100%;">'+                    
                         '<div style="width=100%; height=100%;">'+
                         '<p></p>'+
@@ -61,7 +61,7 @@
                         '</div>'+
                         '</div>'
                        );
-    layout.content('main', '<div id="gview" style="width=100%; height=100%;">'+
+    layout.html('main', '<div id="gview" style="width=100%; height=100%;">'+
                            '<div style="width=50%; padding: 20%; font-size: 160%;">'+
                            '<b>A paper describing tcsBU has been published in the journal <i>Bioinformatics</i>'+
                            ' and is already available at their web site. '+
@@ -72,7 +72,7 @@
                            'target="blank">doi: 10.1093/bioinformatics/btv636</a>)'+
                            '</div>'+
                            '</div>');    
-    layout.content('bottom','');
+    layout.html('bottom','');
      
     /*
      * Add a hidden <input> field to load a graph file (GML)

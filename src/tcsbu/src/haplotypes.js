@@ -31,10 +31,10 @@ function getHaplotypesGrid(style){
     multiSelect: false,
     show: {header: false, toolbar: true, footer: true, lineNumbers: false, toolbarSearch: false, toolbarInput:false, toolbarReload: false, toolbarColumns: false, toolbarAdd: false, toolbarDelete: false, toolbarEdit: false },
     columns: [
-      { field: 'recid', caption: 'Label', size: '55%', sortable: true, resizable: true },
+      { field: 'recid', text: 'Label', size: '55%', sortable: true, resizable: true },
       { field: 'haplogroup', hidden: true },
       { field: 'color', hidden: true },
-      { field: 'group', caption: 'Group', size: '45%', sortable: true, resizable: true, editable: { type: 'combo', items: ['Default'], filter: false }, 
+      { field: 'group', text: 'Group', size: '45%', sortable: true, resizable: true, editable: { type: 'combo', items: ['Default'], filter: false },
           render: function (r) {
             var color = parseInt(r.color,16);
             var textcolor;
@@ -46,8 +46,8 @@ function getHaplotypesGrid(style){
     ],
     toolbar: {
       items: [
-        { type: 'button', id: 'load_haplotypes', caption: 'Load', icon: 'icon-folder-open'},
-        { type: 'button', id: 'save_haplotypes', caption: 'Save', icon: 'icon-file-save'}
+        { type: 'button', id: 'load_haplotypes', text: 'Load', icon: 'icon-folder-open'},
+        { type: 'button', id: 'save_haplotypes', text: 'Save', icon: 'icon-file-save'}
       ],
       onClick: function (e) {
         switch(e.target){
