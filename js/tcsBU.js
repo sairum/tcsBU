@@ -2077,18 +2077,21 @@ function svgStart() {
                         '</div>'+
                         '<div style="margin: 10px; padding-top: 6px; width: 90%; height: 100%; background-color: #EFF0F1;">'+
                         '<p style="text-align: center;">Examples</p>'+
-                        '<div style="text-align: center;"><button class="w2ui-btn" id="tcsdata" name="tcsdata">TCS network</button></div><p>'+
-                        '<div style="text-align: center;"><button class="w2ui-btn" id="groups" name="groups">Classification Groups</button></div><p>'+
-                        '<div style="text-align: center;"><button class="w2ui-btn" id="haplotypes" name="haplotypes">Classified Haplotypes</button></div><p>'+
-                        '<div style="text-align: center;"><button class="w2ui-btn" id="gpatterns" name="gpatterns">Groups with patterns</button></div><p>'+
+                        //'<div style="text-align: center;"><button class="w2ui-btn" id="tcsdata" name="tcsdata">TCS network</button></div><p>'+
+                        '<div style="text-align: center;"><a href="examples/tcs-output.graph" target=_balnk>tcs-output.graph</a></div><p>'+
+                        //'<div style="text-align: center;"><button class="w2ui-btn" id="groups" name="groups">Classification Groups</button></div><p>'+
+                        '<div style="text-align: center;"><a href="examples/groups.csv" target=_balnk>groups.csv</a></div><p>'+
+                        //'<div style="text-align: center;"><button class="w2ui-btn" id="haplotypes" name="haplotypes">Classified Haplotypes</button></div><p>'+
+                        '<div style="text-align: center;"><a href="examples/haplotypes.csv" target=_balnk>haplotypes.csv</a></div><p>'+
+                        //'<div style="text-align: center;"><button class="w2ui-btn" id="gpatterns" name="gpatterns">Groups with patterns</button></div><p>'+
+                        '<div style="text-align: center;"><a href="examples/group-patterns.csv" target=_balnk>group-patterns.csv</a></div><p>'+
                         '</div>'+
                         '</div>'
                        );
     layout.html('main', '<div id="gview" style="width=100%; height=100%;">'+
                            '<div style="width=50%; padding: 20%; font-size: 160%;">'+
-                           '<b>A paper describing tcsBU has been published in the journal <i>Bioinformatics</i>'+
-                           ' and is already available at their web site. '+
-                           'Please cite as:</b><p>Santos, AM, Cabezas MP, Tavares AI, Xavier R, '+
+                           'A paper describing tcsBU has been published in the journal <i>Bioinformatics</i>. '+
+                           'Please cite as: <p>Santos, AM, Cabezas MP, Tavares AI, Xavier R, '+
                            'Branco M (2016) tcsBU: a tool to extend TCS network layout and '+
                            'visualization. <i>Bioinformatics</i>, btv636 '+
                            '(<a href="https://academic.oup.com/bioinformatics/article/32/4/627/1744448/" '+
@@ -2115,22 +2118,6 @@ function svgStart() {
     // Do not mess with this!
     // $('#chargeDistance').w2field('int', { min: 0, step: 10, arrows: true }); 
     $('#gravity').w2field('float', { min: 0, max: 1, step: 0.001, arrows: true });
-    
-    $('#tcsdata').click(function(){
-      saveExamples('tcs-output.graph.txt');
-    });
-    
-    $('#groups').click(function(){
-      saveExamples('groups.txt');
-    });
-    
-    $('#haplotypes').click(function(){
-      saveExamples('haplotypes.txt');
-    });
-    
-    $("#gpatterns").click(function(){
-      saveExamples("groups-patterns.txt");
-    });
     
     $('#help').click(function(){
       $().w2popup({

@@ -1,5 +1,7 @@
 # tcsBU
 
+> **NOTE 4**: A temporary site for the online version of tcsBU is now available at (http://www.fc.up.pt/pessoas/amsantos/tcsBU).
+
 > **NOTE 3**: Until further notice, tcsBU online version (http://cibio.up.pt/software/tcsBU/index.html) will be not available due to a change in the Internet Service Provider. Currently, CIBIO's Website is not hosted directly by the University of Porto. You can still use the current version of tcsBU by selecting the master branch and downloading the files of this repository, saving them in any folder. Go to that folder and click on *index.html* or open it with any modern browser.
 
 > **NOTE2**: The link to the online version of the software provided in the paper (http://cibio.up.pt/software/tcsBU) is not working due to a server misconfiguration that we cannot solve. However, using the complete URL (http://cibio.up.pt/software/tcsBU/index.html) should work for now.
