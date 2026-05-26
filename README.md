@@ -1,3 +1,5 @@
+## *This repository was moved to Codeberg*
+
 # tcsBU
 
 > **NOTE 4**: A temporary site for the online version of tcsBU is now available at (http://www.fc.up.pt/pessoas/amsantos/tcsBU).
